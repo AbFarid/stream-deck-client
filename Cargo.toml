@@ -1,0 +1,25 @@
+[package]
+name = "stream-deck-client"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[dependencies]
+hidapi = "1.4.2"
+image = "0.24.4"
+rusttype = "0.9"
+elgato-streamdeck = { git = "https://github.com/amenophis/elgato-streamdeck.git" }
+imageproc = "0.23.0"
+
+# [build-dependencies]
+# cc = "1.0"
+
+# [build]
+# target = "armv7-unknown-linux-musleabihf"
+
+[target.armv7-unknown-linux-musleabihf]
+linker = "arm-linux-gnueabihf-ld"
+ar = "arm-linux-gnueabihf-ar" # optional
+
+# [target.arm-unknown-linux-gnueabihf]
+# linker = "/usr/local/Cellar/arm-linux-gnueabihf-binutils/2.40/bin/arm-linux-gnueabihf-ld"

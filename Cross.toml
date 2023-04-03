@@ -1,0 +1,2 @@
+[target.armv7-unknown-linux-musleabihf]
+image = "rust-armv7-gnu-libusb:latest"
